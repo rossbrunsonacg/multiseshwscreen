@@ -1,0 +1,23 @@
+# Save this off to a file named ~/.screenrclots, 
+# and invoke it with `screen -c ~/.screenrclots`
+
+# Startup Message State
+
+startup_message=off
+
+# Windows to Open on Start
+# 'bash' is inserted where you might not have a utility
+# such as on the slocate and python lines
+
+screen -t controlpanel 1 bash
+screen -t sys1-perf 2 top
+screen -t disk-use 3 watch df -hT
+screen -t man-screen 4 man screen
+screen -t man-top 5 man top
+screen -t python 6 bash
+screen -t vim-fstab 7 vim /etc/fstab
+screen -t vim-screenrc 8 vim .screenrc
+screen -t info 9 info
+screen -t slocate 10 bash
+screen -t ssh-server1 11 bash
+screen -t bash 12 bash
