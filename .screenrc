@@ -7,7 +7,7 @@ autodetach on
 # Always display a status line in a session
 hardstatus on
 hardstatus alwayslastline
-hardstatus '%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-='
+hardstatus string '%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-='
 
 # Use F10 to select window 0, F1-F4 to select 1-4
 bindkey "^[[21~" select 0
